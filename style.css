@@ -1,0 +1,395 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+::-webkit-scrollbar {
+  width: 8px;
+}
+
+::-webkit-scrollbar-thumb {
+  border-radius: 10px;
+  background-color: #495670;
+  border: 1px solid #0a192f;
+}
+
+body {
+  font-family: "Calibre", "Inter", "San Francisco", "SF Pro Text", -apple-system,
+    system-ui, sans-serif;
+  color: aliceblue;
+  line-height: 1.1;
+  background-color: #0a192f;
+}
+
+.indx-header {
+  /* header*/
+  /* box-shadow: 0 10px 30px -10px  rgba(2,12,27,0.7); */
+  padding: 23px 45px 5px 45px;
+  position: fixed;
+  width: 100%;
+  background-color: #0a192f;
+  /*#020c1b;*/
+}
+
+.logo {
+  border-radius: 10px 0;
+}
+
+.logo,
+.sidebar-icon {
+  width: 40px;
+  padding: 4px;
+  cursor: pointer;
+  font-size: 20px;
+  font-weight: 500;
+  border: 2px solid aquamarine;
+}
+
+/* sidebar icon for navigation on smaller devices => */
+.sidebar-icon {
+  background: transparent;
+}
+
+.dropdown {
+  position: relative;
+}
+
+.dropdown-content {
+  margin-top: 10px;
+  display: none;
+  border: 1px solid aquamarine;
+  padding: 10px;
+}
+
+.show {
+  display: block;
+}
+
+/* sidebar icon end <= */
+
+.head-link,
+.main-link {
+  /* ul tag in the header*/
+  list-style: none;
+  height: 40px;
+  gap: 30px;
+}
+
+.head-link {
+  justify-content: space-between;
+}
+
+.df {
+  display: flex;
+}
+
+.cl-aqua {
+  color: aquamarine;
+}
+
+.tac {
+  text-align: center;
+}
+
+.nav-li,
+.intro,
+.btn,
+.sf-mono {
+  font-family: "SF Mono", "Fira Code", "Fira Mono", "Roboto Mono", monospace;
+}
+
+.nav-li {
+  font-size: 13px;
+  align-self: center;
+}
+
+.navlink {
+  color: #ffffffaf;
+}
+
+.navlink:hover {
+  color: aquamarine;
+}
+
+a {
+  text-decoration: none;
+}
+
+.resume-btn {
+  width: 80px;
+  font-size: 13px;
+}
+
+.btn {
+  border: 1px solid aquamarine;
+  background: transparent;
+  display: inline-block;
+  text-align: center;
+  border-radius: 5px;
+  padding: 10px;
+  color: aquamarine;
+}
+
+.btn:hover {
+  background-color: rgba(200, 200, 200, 0.1);
+}
+
+/* Intro section start => */
+.section-1 {
+  display: flex;
+  justify-content: center;
+  height: 100vh;
+  width: 100%;
+}
+
+.intro {
+  font-weight: lighter;
+  font-size: 17px;
+}
+
+.message {
+  /* border: 1px solid #000; */
+  margin-top: 60px;
+  margin-right: 57px;
+  align-self: center;
+  height: fit-content;
+  padding: 10px;
+  width: 70%;
+}
+
+.large-text {
+  line-height: 1.2;
+  font-size: 4rem;
+  font-weight: 700;
+}
+
+.name {
+  margin-top: 10px;
+  color: #ccd6f6;
+}
+
+.fade {
+  color: #8892b0;
+  margin-bottom: 20px;
+}
+
+.description {
+  width: 65%;
+  font-size: 15px;
+  line-height: 1.6em;
+  letter-spacing: 0.1px;
+  color: #ffffff80;
+}
+
+.back-link {
+  /*Loyalty Academy*/
+  cursor: pointer;
+}
+
+.crp-btn {
+  /* => "check recent projects" button */
+  font-size: 15px;
+  margin-top: 35px;
+  padding: 15px;
+  color: aquamarine;
+}
+
+/* .social-icon{margin-left: 50px;} */
+.social-icon,
+.email {
+  position: fixed;
+  align-self: flex-end;
+}
+
+.social-icon {
+  left: 11px;
+  right: auto;
+}
+
+.email {
+  left: auto;
+  right: 50px;
+}
+
+.social-icon > ul > li {
+  margin-left: 46px;
+  list-style: none;
+}
+
+.email > div > a {
+  font-size: 13px;
+  -webkit-writing-mode: vertical-rl;
+  writing-mode: vertical-rl;
+  color: #ffffff80;
+}
+
+.email > div > a:hover {
+  color: aquamarine;
+}
+
+.line {
+  height: 90px;
+  border-right: 1px solid #ffffff80;
+}
+
+.line1 {
+  margin: 10px 0 0 9px;
+}
+
+.line2 {
+  margin: 10px 9px 0 0;
+}
+
+/* intro section ends <= */
+
+/* about section starts => */
+.section-2 {
+  /* border: 1px solid aquamarine; */
+  height: 85vh;
+}
+
+.about {
+  /* border: 1px solid #bb1e1e; */
+  justify-content: space-around;
+  /* gap: 70px; */
+  width: 80%;
+  margin: 30px auto;
+  padding: 3px;
+}
+
+.about-text {
+  width: 46%;
+}
+
+.about-heading {
+  margin-bottom: 30px;
+  font-size: 1.2em;
+  display: flex;
+  gap: 20px;
+}
+
+.hr {
+  align-self: center;
+  width: 200px;
+  opacity: 0.4;
+  border-top: 1px solid #ffffff80;
+}
+
+.aboutme {
+  font-size: 15px;
+  line-height: 25px;
+}
+
+.technologies {
+  margin-left: 30px;
+}
+
+.technologies > li {
+  padding: 5px;
+  font-size: 14px;
+}
+
+.photo-container {
+  position: relative;
+  margin-top: 40px;
+}
+
+.img-box {
+  border-radius: 5px;
+  background-size: cover;
+  background-color: aquamarine;
+  background-image: url("/img/tobi.jpeg");
+  opacity: 0.5;
+  /* margin-left: 15px; */
+}
+
+.img-liner,
+.img-box {
+  width: 270px;
+  height: 270px;
+  border-radius: 0 20px;
+}
+
+.img-liner {
+  border: 2px solid aquamarine;
+  position: absolute;
+  top: 15px;
+  left: 15px;
+  opacity: 0.5;
+}
+
+.img-liner:hover {
+  top: 17px;
+  left: 17px;
+  transition: ease-in-out 1s;
+}
+
+@media only screen and (max-width: 1194px) {
+  .about {
+    flex-direction: column;
+  }
+
+  .about-text {
+    width: 100%;
+  }
+}
+
+@media only screen and (max-width: 782px) {
+  body {
+    font-size: 16px;
+  }
+
+  .section-1 {
+    padding: 0 20px;
+  }
+
+  .large-text {
+    font-size: 3em;
+  }
+
+  .section-1 {
+    height: 85vh;
+    justify-content: center;
+  }
+
+  .social-icon,
+  .email {
+    display: none;
+  }
+
+  .nav-li {
+    display: none;
+  }
+
+  .sidebar-icon {
+    display: block;
+  }
+
+  .description {
+    width: 100%;
+  }
+
+  .message {
+    width: 100%;
+  }
+}
+
+@media only screen and (max-width: 480px) {
+  .large-text {
+    font-size: 2.2em;
+  }
+
+  .resume-btn {
+    display: none;
+  }
+
+  .message {
+    margin-right: 0;
+    padding: 0;
+  }
+}
