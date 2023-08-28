@@ -1,11 +1,16 @@
-"use strict"
+"use strict";
+// Animate on Scroll
 
-let drpdownBtn = document.getElementsByClassName("sidebar-icon")[0]
+const observer = new IntersectionObserver((entries) => {
+  entries.forEach((entry) => {
+    console.log(entry);
+    if (entry.isIntersecting) {
+      entry.target.classList.add("show");
+    } else {
+      entry.target.classList.remove("show");
+    }
+  });
+});
 
-function dispDropdown(){
-    document.getElementById("dropdown").classList.toggle("show")
-}
-drpdownBtn.addEventListener("click", dispDropdown)
-
- const random =  [1, 2 , "Funke", 4, 5, "Gauis"]
- console.log(random)
+const hiddenElements = document.querySelectorAll(".hidden");
+hiddenElements.forEach((el) => observer.observe(el));
